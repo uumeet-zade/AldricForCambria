@@ -1,119 +1,320 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Democratic Alliance - For the Republic</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Social Democratic Alliance - For the Republic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css?v=7.1" rel="stylesheet"/>
+<script>
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme !== 'light') {
       document.documentElement.classList.add('dark-theme');
     }
   </script>
-  <script src="translations.js?v=1.2" defer></script>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta property="og:title" content="Social Democratic Alliance">
-  <meta property="og:description" content="For the Republic. For the People.">
-  <meta property="og:image" content="https://uumeet-zade.github.io/sdapage/link_preview.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Social Democratic Alliance">
-  <meta name="twitter:description" content="For the Republic. For the People.">
-  <meta name="twitter:image" content="https://uumeet-zade.github.io/sdapage/link_preview.png">
+<script defer="" src="assets/js/translations.js?v=2.0"></script>
+<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+<meta content="Social Democratic Alliance" property="og:title"/>
+<meta content="For the Republic. For the People." property="og:description"/>
+<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Social Democratic Alliance" name="twitter:title"/>
+<meta content="For the Republic. For the People." name="twitter:description"/>
+<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" name="twitter:image"/>
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="nav-brand" style="text-decoration: none; color: inherit;">
-      <img class="nav-logo logo-light" src="SDAlogo.svg" alt="Social Democratic Alliance Logo" />
-      <img class="nav-logo logo-dark" src="SDAlogo-dark.svg" alt="Social Democratic Alliance Logo" />
-      <span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
-      
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-      <li><a href="platform.html" data-i18n="nav-platform">Platform</a></li>
-      <li><a href="events.html" class="active" data-i18n="nav-campaigning">Campaigning</a></li>
-      <li class="lang-switcher">
-        <button class="lang-toggle" aria-label="Change Language">
-          <span class="lang-current">AL</span>
-        </button>
-        <div class="lang-dropdown">
-          <button class="lang-option active" data-lang="al">Alanian</button>
-          <button class="lang-option" data-lang="ga">Gallic</button>
-          <button class="lang-option" data-lang="ac">Alcamerian</button>
-          <button class="lang-option" data-lang="ra">Rälandic</button>
-          <button class="lang-option" data-lang="my">Myrati</button>
-          <button class="lang-option" data-lang="au">Austrumish</button>
-          <button class="lang-option" data-lang="le">Leislandic</button>
-        </div>
-      </li>
-      <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
-    </ul>
-  </nav>
-  <section class="page-header" style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
-    <h1 data-i18n="ev-title" style=" font-size: 4.5rem;">On the Trail</h1>
-    <p data-i18n="ev-desc" style="margin: 0 auto; font-size: 1.25rem; max-width: 600px;">Follow Aldric von Reichel on the campaign trail as we bring the platform to every corner of Cambria.</p>
-  </section>
-
-  <section class="page-section" style="padding: 20px 5% 40px; text-align: center;">
-    <h2 data-i18n="ev-mat-title" class="section-title" style="margin-bottom: 40px;">Campaign Material</h2>
-    <div class="campaign-poster-container" style="width: 100%; max-width: 800px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 25px 60px rgba(0,0,0,0.15); border: 1px solid var(--glass-border);">
-      <img src="campaigning/cambriaposter.png" alt="Aldric von Reichel Campaign Poster" style="width: 100%; height: auto; display: block;">
-    </div>
-    <div style="margin-top: 40px;">
-      <a href="campaigning/Cambria%20Campaigning.docx" class="btn-primary" style="text-decoration: none; display: inline-block; padding: 14px 28px; font-weight: 600;" download data-i18n="ev-mat-dl">Download Campaigning Material (DOCX)</a>
-    </div>
-  </section>
-
-  <section class="bento-grid" style="position: relative; z-index: 5;">
-      <!-- Article 1 -->
-      <article class="bento-item bento-half" style="display: flex; flex-direction: column; justify-content: space-between; padding: 40px; text-align: left;">
-        <div>
-          <h2 data-i18n="ev-card1-t" class="news-title" style="font-family: 'Outfit', sans-serif;  margin-bottom: 15px;">Built Around Cambria</h2>
-          <p data-i18n="ev-card1-d" class="news-excerpt" style="color: var(--text-muted); line-height: 1.6;">Aldric von Reichel meets with Governess Wren and local shop owners at the guildhall. He outlines his platform for anti-monopoly enforcement, regional contract protections, and bringing a dedicated R&D center directly to Cambria.</p>
-        </div>
-        <div style="margin-top: 30px;">
-          <a href="event-guildhall.html" class="btn-primary" style="text-decoration: none; display: inline-block; font-size: 0.95rem; padding: 10px 20px;" data-i18n="ev-read-full">Read Full Story</a>
-        </div>
-      </article>
-
-      <!-- Article 2 -->
-      <article class="bento-item bento-half" style="display: flex; flex-direction: column; justify-content: space-between; padding: 40px; text-align: left;">
-        <div>
-          <h2 data-i18n="ev-card2-t" class="news-title" style="font-family: 'Outfit', sans-serif;  margin-bottom: 15px;">The Line Runs Both Ways</h2>
-          <p data-i18n="ev-card2-d" class="news-excerpt" style="color: var(--text-muted); line-height: 1.6;">Speaking with workers in the field and locals at the town well, Aldric details the High-Speed Rail node plan. He commits to ensuring the node connects Cambria without surrendering local zoning authority to larger districts.</p>
-        </div>
-        <div style="margin-top: 30px;">
-          <a href="event-field.html" class="btn-primary" style="text-decoration: none; display: inline-block; font-size: 0.95rem; padding: 10px 20px;" data-i18n="ev-read-full">Read Full Story</a>
-        </div>
-      </article>
-  </section>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <img class="logo-light" src="SDAlogo.svg" alt="Social Democratic Alliance" />
-        <img class="logo-dark" src="SDAlogo-dark.svg" alt="Social Democratic Alliance" />
-        <div class="footer-brand-text">
-          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
-        </div>
-      </div>
-      <div class="footer-copy" data-i18n="footer-copy">
-        Upcoming Elections · Caprica<br />
+<nav>
+<a class="nav-brand" data-i18n="auto-events-136" href="index.html" style="text-decoration: none; color: inherit;">
+<img alt="Social Democratic Alliance Logo" class="nav-logo logo-light" src="assets/images/SDAlogo.svg"/>
+<img alt="Social Democratic Alliance Logo" class="nav-logo logo-dark" src="assets/images/SDAlogo-dark.svg"/>
+<span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
+</a>
+<ul class="nav-links">
+<li><a data-i18n="nav-home" href="index.html">Home</a></li>
+<li><a data-i18n="nav-platform" href="platform.html">Platform</a></li>
+<li><a class="active" data-i18n="nav-campaigning" href="events.html">Campaigning</a></li>
+<li><a data-i18n="nav-candidates" href="candidates.html">Candidates</a></li>
+<li class="lang-switcher">
+<button aria-label="Change Language" class="lang-toggle">
+<span class="lang-current">AL</span>
+</button>
+<div class="lang-dropdown">
+<button class="lang-option active" data-i18n="auto-events-1" data-lang="al">Alanian</button>
+<button class="lang-option" data-i18n="auto-events-2" data-lang="ga">Gallic</button>
+<button class="lang-option" data-i18n="auto-events-3" data-lang="ac">Alcamerian</button>
+<button class="lang-option" data-i18n="auto-events-4" data-lang="ra">Rälandic</button>
+<button class="lang-option" data-i18n="auto-events-5" data-lang="my">Myrati</button>
+<button class="lang-option" data-i18n="auto-events-6" data-lang="au">Austrumish</button>
+<button class="lang-option" data-i18n="auto-events-7" data-lang="le">Leislandic</button>
+</div>
+</li>
+<li><a class="theme-toggle" data-i18n="auto-events-137" href="#" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
+</ul>
+</nav>
+<section class="page-header" style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
+<h1 data-i18n="ev-title" style=" font-size: 4.5rem;">On the Trail</h1>
+<p data-i18n="auto-events-138" style="margin: 0 auto; font-size: 1.25rem; max-width: 600px;">Follow the Social Democratic Alliance on the campaign trail as we bring the platform to every corner of the Republic.</p>
+</section>
+<section class="page-section" style="padding: 40px 5%;">
+<div class="event-filters" style="margin-top: -10px;">
+<button class="filter-btn active" data-filter="all">All Events</button>
+<button class="filter-btn" data-filter="party">National Party</button>
+<button class="filter-btn" data-filter="governor">Gubernatorial</button>
+<button class="filter-btn" data-filter="constituency">Constituency</button>
+</div>
+<div style="max-width: 1000px; margin: 0 auto;">
+<!-- Party Events -->
+<div class="events-category" data-category="party">
+<h2 style="font-size: 2.5rem; margin-bottom: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">Party Events</h2>
+<div class="events-list">
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-8">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-9">12</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-10">National Campaign Kickoff</h3>
+<div class="event-location" data-i18n="auto-events-11"><strong>Location:</strong> The Capitol Grand Plaza, Caprica City</div>
+<div class="event-time" data-i18n="auto-events-12"><strong>Time:</strong> 6:00 PM - 9:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-13">Join party leadership and our endorsed candidates as we officially launch the campaign trail for the upcoming elections.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-14"><a class="btn-primary" data-i18n="auto-events-15" href="#">RSVP</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-16">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-17">24</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-18">Workers' Coalition Town Hall</h3>
+<div class="event-location" data-i18n="auto-events-19"><strong>Location:</strong> Industrial Heritage Museum, Mezata</div>
+<div class="event-time" data-i18n="auto-events-20"><strong>Time:</strong> 2:00 PM - 5:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-21">An open discussion focusing on union rights, minimum wage adjustments, and securing the future of Caprica's workforce.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-22"><a class="btn-primary" data-i18n="auto-events-23" href="#">RSVP</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-24">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-25">05</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-26">Youth for the Republic Summit</h3>
+<div class="event-location" data-i18n="auto-events-27"><strong>Location:</strong> University of Caprica Main Auditorium</div>
+<div class="event-time" data-i18n="auto-events-28"><strong>Time:</strong> 10:00 AM - 3:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-29">A day dedicated to young voters, featuring policy workshops, networking, and a keynote address on the future of our republic.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-30"><a class="btn-primary" data-i18n="auto-events-31" href="#">RSVP</a></div>
+</div>
+</div>
+</div>
+<!-- Gubernatorial Events -->
+<div class="events-category" data-category="governor">
+<h2 style="font-size: 2.5rem; margin: 80px 0 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">Gubernatorial Campaign</h2>
+<div class="events-list">
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-32">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-33">15</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-34">Safiyya Bethune: Gubernatorial Launch</h3>
+<div class="event-location" data-i18n="auto-events-35"><strong>Location:</strong> Statehouse Steps</div>
+<div class="event-time" data-i18n="auto-events-36"><strong>Time:</strong> 4:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-37">Safiyya Bethune outlines her vision for the state, focusing on regional infrastructure and public education reform.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-38"><a class="btn-outline" data-i18n="auto-events-39" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-40">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-41">20</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-42">Safiyya Bethune: Regional Transit Tour</h3>
+<div class="event-location" data-i18n="auto-events-43"><strong>Location:</strong> Central Station Hub</div>
+<div class="event-time" data-i18n="auto-events-44"><strong>Time:</strong> 11:00 AM</div>
+<p class="event-desc" data-i18n="auto-events-45">A press conference and public meet-and-greet detailing plans to revitalize the state's aging transportation networks.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-46"><a class="btn-outline" data-i18n="auto-events-47" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-48">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-49">02</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-50">Safiyya Bethune: State Fair Visit</h3>
+<div class="event-location" data-i18n="auto-events-51"><strong>Location:</strong> County Fairgrounds</div>
+<div class="event-time" data-i18n="auto-events-52"><strong>Time:</strong> All Day</div>
+<p class="event-desc" data-i18n="auto-events-53">Join Safiyya on the trail as she visits local vendors, talks with farmers, and outlines her agricultural platform.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-54"><a class="btn-outline" data-i18n="auto-events-55" href="#">More Info</a></div>
+</div>
+</div>
+</div>
+<!-- Constituency Events -->
+<div class="events-category" data-category="constituency">
+<h2 style="font-size: 2.5rem; margin: 80px 0 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">Constituency Campaigns</h2>
+<div class="events-list">
+<!-- Ambrosia (Marcus Horvat) -->
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-56">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-57">18</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-58">Marcus Horvat: Ambrosia Community Picnic</h3>
+<div class="event-location" data-i18n="auto-events-59"><strong>Location:</strong> Ambrosia City Park</div>
+<div class="event-time" data-i18n="auto-events-60"><strong>Time:</strong> 12:00 PM - 4:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-61">A family-friendly event with food and games, giving Ambrosia residents a chance to meet their candidate, Marcus Horvat.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-62"><a class="btn-outline" data-i18n="auto-events-63" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-64">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-65">28</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-66">Marcus Horvat: Small Business Roundtable</h3>
+<div class="event-location" data-i18n="auto-events-67"><strong>Location:</strong> Downtown Ambrosia Commerce Center</div>
+<div class="event-time" data-i18n="auto-events-68"><strong>Time:</strong> 6:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-69">Marcus Horvat meets with local business owners to discuss economic revitalization in the Ambrosia region.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-70"><a class="btn-outline" data-i18n="auto-events-71" href="#">More Info</a></div>
+</div>
+<!-- Kazana (William Smith) -->
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-72">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-73">08</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-74">William Smith: Kazana Tech Initiative</h3>
+<div class="event-location" data-i18n="auto-events-75"><strong>Location:</strong> Kazana Innovation Hub</div>
+<div class="event-time" data-i18n="auto-events-76"><strong>Time:</strong> 2:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-77">William Smith tours the local tech hub and announces his plan for expanding digital infrastructure in Kazana.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-78"><a class="btn-outline" data-i18n="auto-events-79" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-80">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-81">15</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-82">William Smith: Kazana Harbor Tour</h3>
+<div class="event-location" data-i18n="auto-events-83"><strong>Location:</strong> Kazana Maritime Port</div>
+<div class="event-time" data-i18n="auto-events-84"><strong>Time:</strong> 10:00 AM</div>
+<p class="event-desc" data-i18n="auto-events-85">A press event focusing on securing and upgrading Kazana's critical maritime trading routes.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-86"><a class="btn-outline" data-i18n="auto-events-87" href="#">More Info</a></div>
+</div>
+<!-- Mezata (Sherwin Hildebrand) -->
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-88">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-89">22</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-90">Sherwin Hildebrand: Mezata Factory Walk</h3>
+<div class="event-location" data-i18n="auto-events-91"><strong>Location:</strong> Mezata Industrial District</div>
+<div class="event-time" data-i18n="auto-events-92"><strong>Time:</strong> 8:00 AM</div>
+<p class="event-desc" data-i18n="auto-events-93">Sherwin Hildebrand meets with shift workers to discuss manufacturing jobs and workplace safety regulations.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-94"><a class="btn-outline" data-i18n="auto-events-95" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-96">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-97">10</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-98">Sherwin Hildebrand: Mezata Education Forum</h3>
+<div class="event-location" data-i18n="auto-events-99"><strong>Location:</strong> Mezata Public High School</div>
+<div class="event-time" data-i18n="auto-events-100"><strong>Time:</strong> 7:00 PM</div>
+<p class="event-desc" data-i18n="auto-events-101">A town hall focused on securing better funding for technical and vocational schools in Mezata.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-102"><a class="btn-outline" data-i18n="auto-events-103" href="#">More Info</a></div>
+</div>
+<!-- Oplana (Adam Scholz) -->
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-104">Aug</span>
+<span class="event-date-day" data-i18n="auto-events-105">30</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-106">Adam Scholz: Oplana Coast Cleanup</h3>
+<div class="event-location" data-i18n="auto-events-107"><strong>Location:</strong> Oplana North Beach</div>
+<div class="event-time" data-i18n="auto-events-108"><strong>Time:</strong> 9:00 AM</div>
+<p class="event-desc" data-i18n="auto-events-109">Join Adam Scholz for a community volunteer day focused on protecting Oplana's coastal environments.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-110"><a class="btn-outline" data-i18n="auto-events-111" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-112">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-113">18</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-114">Adam Scholz: Oplana Tourism Board Meet</h3>
+<div class="event-location" data-i18n="auto-events-115"><strong>Location:</strong> Oplana Resort Center</div>
+<div class="event-time" data-i18n="auto-events-116"><strong>Time:</strong> 11:30 AM</div>
+<p class="event-desc" data-i18n="auto-events-117">Adam Scholz discusses strategies for sustainably growing the local tourism economy in Oplana.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-118"><a class="btn-outline" data-i18n="auto-events-119" href="#">More Info</a></div>
+</div>
+<!-- Reno (Noodles dos Açores) -->
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-120">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-121">01</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-122">Noodles dos Açores: Reno Agricultural Fair</h3>
+<div class="event-location" data-i18n="auto-events-123"><strong>Location:</strong> Reno County Showgrounds</div>
+<div class="event-time" data-i18n="auto-events-124"><strong>Time:</strong> All Day</div>
+<p class="event-desc" data-i18n="auto-events-125">Noodles dos Açores kicks off the campaign in Reno by judging the annual agricultural exhibits and speaking with local farmers.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-126"><a class="btn-outline" data-i18n="auto-events-127" href="#">More Info</a></div>
+</div>
+<div class="event-card">
+<div class="event-date">
+<span class="event-date-month" data-i18n="auto-events-128">Sep</span>
+<span class="event-date-day" data-i18n="auto-events-129">20</span>
+</div>
+<div class="event-details">
+<h3 class="event-title" data-i18n="auto-events-130">Noodles dos Açores: Reno Water Rights Debate</h3>
+<div class="event-location" data-i18n="auto-events-131"><strong>Location:</strong> Reno Civic Center</div>
+<div class="event-time" data-i18n="auto-events-132"><strong>Time:</strong> 7:30 PM</div>
+<p class="event-desc" data-i18n="auto-events-133">A highly anticipated debate regarding the future of irrigation and water allocation in the Reno region.</p>
+</div>
+<div class="event-action" data-i18n="auto-events-134"><a class="btn-outline" data-i18n="auto-events-135" href="#">More Info</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+<div class="footer-brand">
+<img alt="Social Democratic Alliance" class="logo-light" src="assets/images/SDAlogo.svg"/>
+<img alt="Social Democratic Alliance" class="logo-dark" src="assets/images/SDAlogo-dark.svg"/>
+<div class="footer-brand-text">
+<div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+<div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
+</div>
+</div>
+<div class="footer-copy" data-i18n="footer-copy">
+        Upcoming Elections · Caprica<br/>
         Social Democratic Alliance
       </div>
-    </div>
-  </footer>
-
-
-  <script>
+</div>
+</footer>
+<script>
     function toggleTheme(e) {
       if (e) e.preventDefault();
       const html = document.documentElement;
@@ -125,6 +326,42 @@
         localStorage.setItem('theme', 'dark');
       }
     }
+
+    // Filter Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.event-filters .filter-btn');
+      const categories = document.querySelectorAll('.events-category');
+      
+      categories.forEach(c => {
+        c.style.transition = 'opacity 0.4s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1)';
+      });
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          categories.forEach(category => {
+            const catType = category.getAttribute('data-category');
+            if (filterValue === 'all' || catType === filterValue) {
+              category.style.display = 'block';
+              setTimeout(() => {
+                category.style.opacity = '1';
+                category.style.transform = 'translateY(0) scale(1)';
+              }, 10);
+            } else {
+              category.style.opacity = '0';
+              category.style.transform = 'translateY(20px) scale(0.95)';
+              setTimeout(() => {
+                category.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+    });
   </script>
 </body>
 </html>

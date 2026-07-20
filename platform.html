@@ -1,218 +1,143 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Democratic Alliance - For the Republic</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Social Democratic Alliance - For the Republic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css?v=7.1" rel="stylesheet"/>
+<script>
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme !== 'light') {
       document.documentElement.classList.add('dark-theme');
     }
   </script>
-  <script src="translations.js?v=1.2" defer></script>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta property="og:title" content="Social Democratic Alliance">
-  <meta property="og:description" content="For the Republic. For the People.">
-  <meta property="og:image" content="https://uumeet-zade.github.io/sdapage/link_preview.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Social Democratic Alliance">
-  <meta name="twitter:description" content="For the Republic. For the People.">
-  <meta name="twitter:image" content="https://uumeet-zade.github.io/sdapage/link_preview.png">
+<script defer="" src="assets/js/translations.js?v=2.0"></script>
+<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+<meta content="Social Democratic Alliance" property="og:title"/>
+<meta content="For the Republic. For the People." property="og:description"/>
+<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Social Democratic Alliance" name="twitter:title"/>
+<meta content="For the Republic. For the People." name="twitter:description"/>
+<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" name="twitter:image"/>
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="nav-brand" style="text-decoration: none; color: inherit;">
-      <img class="nav-logo logo-light" src="SDAlogo.svg" alt="Social Democratic Alliance Logo" />
-      <img class="nav-logo logo-dark" src="SDAlogo-dark.svg" alt="Social Democratic Alliance Logo" />
-      <span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
-      
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-      <li><a href="platform.html" class="active" data-i18n="nav-platform">Platform</a></li>
-      <li><a href="events.html" data-i18n="nav-campaigning">Campaigning</a></li>
-      <li class="lang-switcher">
-        <button class="lang-toggle" aria-label="Change Language">
-          <span class="lang-current">AL</span>
-        </button>
-        <div class="lang-dropdown">
-          <button class="lang-option active" data-lang="al">Alanian</button>
-          <button class="lang-option" data-lang="ga">Gallic</button>
-          <button class="lang-option" data-lang="ac">Alcamerian</button>
-          <button class="lang-option" data-lang="ra">Rälandic</button>
-          <button class="lang-option" data-lang="my">Myrati</button>
-          <button class="lang-option" data-lang="au">Austrumish</button>
-          <button class="lang-option" data-lang="le">Leislandic</button>
-        </div>
-      </li>
-      <li><a href="#" class="theme-toggle" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
-    </ul>
-  </nav>
-  
-  
-
-
-  <section class="page-header" style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
-    <h1 data-i18n="plat-title" style=" font-size: 4.5rem;">The Cambria Platform</h1>
-    <p data-i18n="plat-desc" style="margin: 0 auto; font-size: 1.25rem; max-width: 600px;">We are building an economy that rewards those who build it, by hand and by brain, ending the exploitation by monopolies.</p>
-  </section>
-
-  <section class="bento-grid" style="position: relative; z-index: 5; padding-top: 0;">
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-anti-monopoly')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b1-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">Anti-Monopoly Enforcement</h3>
-        <p data-i18n="plat-b1-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Automatic review triggers for mergers to protect local suppliers.</p>
-      </div>
-    </div>
-
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-regional')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b2-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">Regional Contracts</h3>
-        <p data-i18n="plat-b2-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Minimum terms by sector preventing predatory agreements.</p>
-      </div>
-    </div>
-
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-rail')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M12 2c-4.42 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-3.58-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-7H6V6h5v4zm4 0V6h5v4h-5zm1.5 7c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b3-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">High-Speed Rail Node</h3>
-        <p data-i18n="plat-b3-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Dedicated connection retaining local zoning authority.</p>
-      </div>
-    </div>
-
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-rnd')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b4-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">Cambrian R&D Center</h3>
-        <p data-i18n="plat-b4-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Regional center prioritizing local soil, crops, and talent.</p>
-      </div>
-    </div>
-
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-freight')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b5-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">Freight Capacity</h3>
-        <p data-i18n="plat-b5-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Timed to local harvest and production cycles.</p>
-      </div>
-    </div>
-
-    <div class="bento-item bento-third" style="cursor: pointer; padding: 24px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content: flex-start; min-height: 120px;" onclick="openModal('modal-bargaining')">
-      <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--primary)" style="flex-shrink: 0;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-      <div>
-        <h3 data-i18n="plat-b6-t" style="font-size: 1.2rem; margin-bottom: 4px; font-family: 'Outfit', sans-serif; ">Collective Bargaining</h3>
-        <p data-i18n="plat-b6-d" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4; margin: 0;">Real enforcement behind the right to organize and strike.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <img class="logo-light" src="SDAlogo.svg" alt="Social Democratic Alliance" />
-        <img class="logo-dark" src="SDAlogo-dark.svg" alt="Social Democratic Alliance" />
-        <div class="footer-brand-text">
-          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
-          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
-        </div>
-      </div>
-      <div class="footer-copy" data-i18n="footer-copy">
-        Upcoming Elections · Caprica<br />
+<nav>
+<a class="nav-brand" data-i18n="auto-platform-18" href="index.html" style="text-decoration: none; color: inherit;">
+<img alt="Social Democratic Alliance Logo" class="nav-logo logo-light" src="assets/images/SDAlogo.svg"/>
+<img alt="Social Democratic Alliance Logo" class="nav-logo logo-dark" src="assets/images/SDAlogo-dark.svg"/>
+<span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
+</a>
+<ul class="nav-links">
+<li><a data-i18n="nav-home" href="index.html">Home</a></li>
+<li><a class="active" data-i18n="nav-platform" href="platform.html">Platform</a></li>
+<li><a data-i18n="nav-campaigning" href="events.html">Campaigning</a></li>
+<li><a data-i18n="nav-candidates" href="candidates.html">Candidates</a></li>
+<li class="lang-switcher">
+<button aria-label="Change Language" class="lang-toggle">
+<span class="lang-current">AL</span>
+</button>
+<div class="lang-dropdown">
+<button class="lang-option active" data-i18n="auto-platform-1" data-lang="al">Alanian</button>
+<button class="lang-option" data-i18n="auto-platform-2" data-lang="ga">Gallic</button>
+<button class="lang-option" data-i18n="auto-platform-3" data-lang="ac">Alcamerian</button>
+<button class="lang-option" data-i18n="auto-platform-4" data-lang="ra">Rälandic</button>
+<button class="lang-option" data-i18n="auto-platform-5" data-lang="my">Myrati</button>
+<button class="lang-option" data-i18n="auto-platform-6" data-lang="au">Austrumish</button>
+<button class="lang-option" data-i18n="auto-platform-7" data-lang="le">Leislandic</button>
+</div>
+</li>
+<li><a class="theme-toggle" data-i18n="auto-platform-19" href="#" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
+</ul>
+</nav>
+<section class="page-header" style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
+<h1 data-i18n="plat-title" style=" font-size: 4.5rem;">The Republic Platform</h1>
+<p data-i18n="plat-desc" style="margin: 0 auto; font-size: 1.25rem; max-width: 700px;">Our comprehensive blueprint for a stronger Republic. We are committed to economic justice, uncompromising national security, robust democratic institutions, and seamlessly connecting every community through modern infrastructure and localized innovation.</p>
+</section>
+<section class="platform-zigzag" style="position: relative; z-index: 5; padding-top: 40px;">
+<!-- Pillar 1: Economic Justice & Small Business -->
+<div class="zigzag-row reveal-on-scroll">
+<div class="zigzag-image-placeholder">
+<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
+<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+</svg>
+</div>
+<div class="zigzag-content">
+<h2 class="zigzag-title" data-i18n="auto-platform-8">Economic Justice &amp; Local Commerce</h2>
+<p class="zigzag-desc" data-i18n="auto-platform-9">We will bring back taxation for luxury goods and implement a robust wealth tax to ensure the ultra-rich pay their fair share. Simultaneously, we support our foundational smaller businesses by lowering their taxes for each employee they employ, directly incentivizing local job creation and community growth.</p>
+</div>
+</div>
+<!-- Pillar 2: National Security -->
+<div class="zigzag-row reveal-on-scroll">
+<div class="zigzag-image-placeholder">
+<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+</svg>
+</div>
+<div class="zigzag-content">
+<h2 class="zigzag-title" data-i18n="auto-platform-10">National Security &amp; Intelligence Reform</h2>
+<p class="zigzag-desc" data-i18n="auto-platform-11">The defense of the Republic requires a unified approach. We will repeal the Nuremberg Act, which unjustly punishes the Caprican Office of Intelligence (COIN). To create a streamlined and impenetrable intelligence apparatus, we will merge domestic security (CIVIC) back into COIN.</p>
+</div>
+</div>
+<!-- Pillar 3: Judiciary -->
+<div class="zigzag-row reveal-on-scroll">
+<div class="zigzag-image-placeholder">
+<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
+<path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11M8 14v4m4-4v4m4-4v4"></path>
+</svg>
+</div>
+<div class="zigzag-content">
+<h2 class="zigzag-title" data-i18n="auto-platform-12">Judicial Expansion &amp; Balance</h2>
+<p class="zigzag-desc" data-i18n="auto-platform-13">Our courts must reflect the true scope and needs of our growing Republic. We pledge to nominate Mary Reichel Proctor to the Supreme Court and actively expand the court's seats to ensure a balanced, robust, and profoundly fair judicial system that works for all Capricans.</p>
+</div>
+</div>
+<!-- Pillar 4: Education & R&D -->
+<div class="zigzag-row reveal-on-scroll">
+<div class="zigzag-image-placeholder">
+<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
+<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+</svg>
+</div>
+<div class="zigzag-content">
+<h2 class="zigzag-title" data-i18n="auto-platform-14">Higher Education &amp; Innovation</h2>
+<p class="zigzag-desc" data-i18n="auto-platform-15">Education and innovation are the twin engines of the Republic. We are committing to massively increased funding for higher education. Furthermore, we will establish a dedicated Research &amp; Development (R&amp;D) Center in every state. These centers will be staffed first by the local community and will prioritize solving the unique industrial and ecological needs of their respective regions.</p>
+</div>
+</div>
+<!-- Pillar 5: Rural Infrastructure -->
+<div class="zigzag-row reveal-on-scroll">
+<div class="zigzag-image-placeholder">
+<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
+<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+<line x1="12" x2="12" y1="22.08" y2="12"></line>
+</svg>
+</div>
+<div class="zigzag-content">
+<h2 class="zigzag-title" data-i18n="auto-platform-16">Rural Infrastructure &amp; Logistics</h2>
+<p class="zigzag-desc" data-i18n="auto-platform-17">Our economy relies on seamless connectivity. Under our new <strong>CapriConnect</strong> infrastructure plan, we will aggressively expand the infrastructure of rural nodes for commercial and logistical use. The core aim of CapriConnect is to link every single state across the Republic with a modernized high-speed rail network, ensuring no region is left behind.</p>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+<div class="footer-brand">
+<img alt="Social Democratic Alliance" class="logo-light" src="assets/images/SDAlogo.svg"/>
+<img alt="Social Democratic Alliance" class="logo-dark" src="assets/images/SDAlogo-dark.svg"/>
+<div class="footer-brand-text">
+<div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+<div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
+</div>
+</div>
+<div class="footer-copy" data-i18n="footer-copy">
+        Upcoming Elections · Caprica<br/>
         Social Democratic Alliance
       </div>
-    </div>
-  </footer>
-
-
-  <!-- Modals -->
-  <div class="modal-backdrop" id="modal-anti-monopoly" onclick="closeModal(event, 'modal-anti-monopoly')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-anti-monopoly')">&times;</button>
-      <div class="modal-header">
-        <h3 data-i18n="plat-b1-mt" style="font-family: 'Outfit', sans-serif;">Anti-Monopoly Enforcement</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b1-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"People who'd actually notice three delivery firms becoming one, before the paperwork was finalized instead of after, when it is late to fix it... This law would establish the door into monopolies slower. And a slower door is time you don't currently have."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="modal-regional" onclick="closeModal(event, 'modal-regional')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-regional')">&times;</button>
-      <div class="modal-header">
-        <h3 style="font-family: 'Outfit', sans-serif;">Regional Contract Protections</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b2-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"Minimum contract terms set by sector, renegotiated with regional input rather than dictated by whoever has the largest share of the route in question. A buyer can still choose not to work with you. They cannot use the absence of alternatives as leverage to set terms below that floor."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="modal-rail" onclick="closeModal(event, 'modal-rail')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-rail')">&times;</button>
-      <div class="modal-header">
-        <h3 data-i18n="plat-b3-mt" style="font-family: 'Outfit', sans-serif;">High-Speed Rail Node</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b3-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"The connection runs both ways, or it isn't worth building... Zoning and development around the node stay under Cambria's own authority, not handed to a regional planning board seated in the capital. You get the connection. You don't lose the town to it."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="modal-rnd" onclick="closeModal(event, 'modal-rnd')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-rnd')">&times;</button>
-      <div class="modal-header">
-        <h3 data-i18n="plat-b4-mt" style="font-family: 'Outfit', sans-serif;">Cambrian R&D Center</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b4-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"An institution that answers to this town and its people before it answers to anyone else... Funded positions here, reserved for Cambrian applicants first, with the university stipends to make it possible for someone from this town to train and come home to something worth coming home to."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="modal-freight" onclick="closeModal(event, 'modal-freight')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-freight')">&times;</button>
-      <div class="modal-header">
-        <h3 style="font-family: 'Outfit', sans-serif;">Freight Capacity for Local Goods</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b5-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"Freight capacity for the feed exchange and the textile cooperative both, timed to your harvest and production cycles rather than a fixed citywide schedule designed around the convenience of others. A stop that exists because Cambria has cargo worth stopping for, or so I believe your cargo is worth stopping for."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="modal-bargaining" onclick="closeModal(event, 'modal-bargaining')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(null, 'modal-bargaining')">&times;</button>
-      <div class="modal-header">
-        <h3 style="font-family: 'Outfit', sans-serif;">Stronger Collective Bargaining</h3>
-      </div>
-      <div class="modal-body">
-        <p data-i18n="plat-b6-md" style="font-style: italic; color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">"Monopoly does not care whether the hand it closes belongs to a shop owner or a shift worker. It closes on both."</p>
-        <p data-i18n="plat-quote-author" style="margin-top: 10px; font-weight: 600; text-align: right;">- Aldric von Reichel</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
+</div>
+</footer>
+<script>
     function openModal(id) {
       document.getElementById(id).classList.add('active');
     }
@@ -232,6 +157,21 @@
         localStorage.setItem('theme', 'dark');
       }
     }
+
+    // Scroll Reveal Animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+        observer.observe(el);
+      });
+    });
   </script>
 </body>
 </html>

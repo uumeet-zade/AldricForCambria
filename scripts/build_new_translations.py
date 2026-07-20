@@ -36,7 +36,7 @@ def translate_text(text, target_lang):
     return text.replace('—', '-')
 
 print("Loading source dictionary...")
-with open('new_source.json', 'r', encoding='utf-8') as f:
+with open('data/new_source.json', 'r', encoding='utf-8') as f:
     source_dict = json.load(f)
 
 final_data = {'al': source_dict}
@@ -50,20 +50,12 @@ for target_key, lang_code in lang_map.items():
             final_data[target_key][k] = v
             continue
 
-        if k == 'idx-hero-title':
-            if lang_code == 'fr': t = 'Aldric von Reichel <br/><span style="color: var(--primary);">pour Cambria</span>'
-            elif lang_code == 'es': t = 'Aldric von Reichel <br/><span style="color: var(--primary);">para Cambria</span>'
-            elif lang_code == 'da': t = 'Aldric von Reichel <br/><span style="color: var(--primary);">for Cambria</span>'
-            elif lang_code == 'cy': t = 'Aldric von Reichel <br/><span style="color: var(--primary);">dros Cambria</span>'
-            elif lang_code == 'lv': t = 'Aldriks fon Reihels <br/><span style="color: var(--primary);">par Kambriju</span>'
-            elif lang_code == 'de': t = 'Aldric von Reichel <br/><span style="color: var(--primary);">für Cambria</span>'
-            final_data[target_key][k] = t
-            continue
+        # No hardcoded overrides needed anymore
 
         final_data[target_key][k] = translate_text(v, lang_code)
 
 print("Writing new_translations.json...")
-with open('new_translations.json', 'w', encoding='utf-8') as f:
+with open('data/new_translations.json', 'w', encoding='utf-8') as f:
     json.dump(final_data, f, indent=2, ensure_ascii=False)
 
 print("Translations complete!")

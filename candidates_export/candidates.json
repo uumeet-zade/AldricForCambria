@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Safiya Bethune-Fayyad",
+    "region": "Reno",
+    "category": "executive",
+    "role": "Governor Candidate",
+    "portrait": "portraits/SafiyaBethune.jpg"
+  },
+  {
+    "name": "Florence Marin",
+    "region": "National",
+    "category": "senate",
+    "role": "Party Chair • Senate Candidate",
+    "portrait": "portraits/FlorenceMarin.png"
+  },
+  {
+    "name": "Stephen Bratanovic",
+    "region": "National",
+    "category": "senate",
+    "role": "Senate Candidate",
+    "portrait": "portraits/StephenBratanovic.jpg"
+  },
+  {
+    "name": "Marcus Horvat",
+    "region": "National",
+    "category": "senate",
+    "role": "Senate Candidate",
+    "portrait": "portraits/MarcusHorvat.jpg"
+  },
+  {
+    "name": "Brezhnev Prigozhn",
+    "region": "National",
+    "category": "senate",
+    "role": "Senate Candidate",
+    "portrait": "portraits/BrezhnevPrigozgin.jpeg"
+  },
+  {
+    "name": "Aldric von Reichel",
+    "region": "Cambria",
+    "category": "house",
+    "role": "House Candidate",
+    "partyListPosition": 3,
+    "portrait": "portraits/AldricvonReichel.png"
+  },
+  {
+    "name": "William Smith",
+    "region": "Kazana",
+    "category": "house",
+    "role": "House Candidate",
+    "partyListPosition": 1,
+    "portrait": "portraits/WillSmith.png"
+  },
+  {
+    "name": "Sherwin Hildebrand",
+    "region": "Mezata",
+    "category": "house",
+    "role": "House Candidate",
+    "partyListPosition": 2,
+    "portrait": "portraits/SherwinHildebrand.png"
+  },
+  {
+    "name": "Adam Scholz",
+    "region": "Oplana",
+    "category": "house",
+    "role": "House Candidate",
+    "partyListPosition": 4,
+    "portrait": "portraits/AdamScholz.png"
+  },
+  {
+    "name": "Dorothy Roosevelt",
+    "region": "Reno",
+    "category": "house",
+    "role": "House Candidate",
+    "partyListPosition": 5,
+    "portrait": "portraits/DorothyArdernRoosevelt.png"
+  },
+  {
+    "name": "Noodles dos Açores",
+    "region": "Reno",
+    "category": "house",
+    "role": "House Candidate",
+    "portrait": "portraits/NoodlesDosAcores.jpg"
+  },
+  {
+    "name": "Valentine Magres",
+    "region": "National",
+    "category": "list",
+    "role": "Party List #6",
+    "partyListPosition": 6,
+    "portrait": "portraits/ValentineMagres.png"
+  },
+  {
+    "name": "Jeanne Valat",
+    "region": "National",
+    "category": "list",
+    "role": "Party List #7",
+    "partyListPosition": 7,
+    "portrait": "portraits/JeanneValat.jpg"
+  }
+]
