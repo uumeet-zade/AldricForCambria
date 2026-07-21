@@ -766,8 +766,15 @@ html.dark-theme .logo-dark { display: inline-block !important; }
 .marquee-content {
   display: flex;
   flex-shrink: 0;
-  animation: marquee-scroll 35s linear infinite;
   gap: 30px;
+}
+.marquee-group {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 30px;
+  animation: marquee-scroll 35s linear infinite;
 }
 .marquee-text {
   font-family: var(--font-heading);
@@ -779,8 +786,8 @@ html.dark-theme .logo-dark { display: inline-block !important; }
   font-weight: 700;
 }
 @keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 15px)); }
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - 30px)); }
 }
 
 /* 3. Entrance & Float Animations */
