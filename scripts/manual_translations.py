@@ -225,6 +225,15 @@ fr = {
     "auto-candidates-80": "Sur la liste du parti.",
     "auto-candidates-81": "Role",
     "auto-candidates-82": "Voir les Evenements",
+,
+    "idx-leadership-title": "Direction du Parti",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Présidente",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Vice-Président",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Chef de Cabinet"
 }
 
 # SPANISH (Alcamerian / ac)
@@ -392,6 +401,15 @@ es = {
     "auto-candidates-80": "En la lista del partido.",
     "auto-candidates-81": "Cargo",
     "auto-candidates-82": "Ver Eventos",
+,
+    "idx-leadership-title": "Liderazgo del Partido",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Presidenta",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Vicepresidente",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Jefe de Gabinete"
 }
 
 # DANISH (Ralandic / ra)
@@ -559,6 +577,15 @@ da = {
     "auto-candidates-80": "Star på partilisten.",
     "auto-candidates-81": "Rolle",
     "auto-candidates-82": "Se Arrangementer",
+,
+    "idx-leadership-title": "Partiledelse",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Forkvinde",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Næstformand",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Stabschef"
 }
 
 # WELSH (Myrati / my)
@@ -726,6 +753,15 @@ cy = {
     "auto-candidates-80": "Yn sefyll ar restr y blaid.",
     "auto-candidates-81": "Swydd",
     "auto-candidates-82": "Gweld Digwyddiadau",
+,
+    "idx-leadership-title": "Arweinyddiaeth y Blaid",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Cadeirydd",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Dirprwy Gadeirydd",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Pennaeth Staff"
 }
 
 # LATVIAN (Austrumish / au)
@@ -893,6 +929,15 @@ lv = {
     "auto-candidates-80": "Ieklauts partijas saraksta.",
     "auto-candidates-81": "Loma",
     "auto-candidates-82": "Skatit pasakumus",
+,
+    "idx-leadership-title": "Partijas Vadība",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Priekšsēdētāja",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Priekšsēdētāja Vietnieks",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Personāla Vadītājs"
 }
 
 # GERMAN (Leislandic / le)
@@ -1092,4 +1137,13 @@ print(f"Manual translations complete!")
 print(f"Total keys: {len(source)}")
 print(f"Passthrough keys: {len(PASSTHROUGH_KEYS)}")
 for code, d in lang_dicts.items():
-    print(f"  {code}: {len(d)} translated keys")
+    print(f"  {code}: {len(d),
+    "idx-leadership-title": "Parteiführung",
+    "ld-name-florence": "Florence Marin",
+    "ld-role-chair": "Vorsitzende",
+    "ld-name-william": "William Smith",
+    "ld-role-deputy": "Stellvertretender Vorsitzender",
+    "ld-name-sherwin": "Sherwin Hildebrand",
+    "ld-name-aldric": "Aldric von Reichel",
+    "ld-role-chief": "Stabschef"
+} translated keys")
