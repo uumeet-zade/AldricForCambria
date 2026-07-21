@@ -464,7 +464,7 @@ html.dark-theme .hero-visual img {
 .candidates-grid,
 .masonry-candidates {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
 
@@ -950,9 +950,48 @@ footer {
   }
 }
 
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-main);
+  cursor: pointer;
+  z-index: 2001;
+}
+
 @media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
   .nav-links {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: var(--bg-surface);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--transition);
+    margin: 0;
+  }
+
+  .nav-links.mobile-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  html.dark-theme .nav-links {
+    background: #161922;
   }
 
   .hero-title {
@@ -965,6 +1004,16 @@ footer {
 
   .page-header h1 {
     font-size: 3.5rem;
+  }
+  
+  .page-header {
+    padding: 100px 5% 60px;
+  }
+  
+  .platform-zigzag,
+  .candidates-section,
+  .events-section {
+    padding: 60px 5% 80px;
   }
 }
 

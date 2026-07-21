@@ -32,6 +32,7 @@
 <img alt="Social Democratic Alliance Logo" class="nav-logo logo-dark" src="assets/images/SDAlogo-dark.svg"/>
 <span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
 </a>
+<button aria-label="Toggle Menu" class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
 <ul class="nav-links">
 <li><a data-i18n="nav-home" href="index.html">Home</a></li>
 <li><a class="active" data-i18n="nav-platform" href="platform.html">Platform</a></li>
@@ -157,6 +158,12 @@
         html.classList.add('dark-theme');
         localStorage.setItem('theme', 'dark');
       }
+    }
+
+    function toggleMobileMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('mobile-active');
+      document.body.style.overflow = navLinks.classList.contains('mobile-active') ? 'hidden' : '';
     }
 
     // Scroll Reveal Animation
