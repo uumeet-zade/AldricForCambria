@@ -250,6 +250,20 @@ fr = {
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Date de Naissance :",
+    "ld-label-gender": "Sexe :",
+    "ld-label-region": "Région :",
+    "ld-val-gender-f": "Femme",
+    "ld-val-gender-m": "Homme",
+    "ld-val-dob-florence": "5 avril 2017",
+    "ld-val-dob-william": "15 avril 2028",
+    "ld-val-dob-sherwin": "17 mai 2024",
+    "ld-val-dob-aldric": "15 février 2035",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 }
 
 # SPANISH (Alcamerian / ac)
@@ -442,6 +456,20 @@ es = {
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Fecha de Nacimiento:",
+    "ld-label-gender": "Género:",
+    "ld-label-region": "Región:",
+    "ld-val-gender-f": "Femenino",
+    "ld-val-gender-m": "Masculino",
+    "ld-val-dob-florence": "5 de abril de 2017",
+    "ld-val-dob-william": "15 de abril de 2028",
+    "ld-val-dob-sherwin": "17 de mayo de 2024",
+    "ld-val-dob-aldric": "15 de febrero de 2035",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 }
 
 # DANISH (Ralandic / ra)
@@ -634,6 +662,20 @@ da = {
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Fødselsdato:",
+    "ld-label-gender": "Køn:",
+    "ld-label-region": "Region:",
+    "ld-val-gender-f": "Kvinde",
+    "ld-val-gender-m": "Mand",
+    "ld-val-dob-florence": "5. april 2017",
+    "ld-val-dob-william": "15. april 2028",
+    "ld-val-dob-sherwin": "17. maj 2024",
+    "ld-val-dob-aldric": "15. februar 2035",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 }
 
 # WELSH (Myrati / my)
@@ -826,6 +868,20 @@ cy = {
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Dyddiad Geni:",
+    "ld-label-gender": "Rhyw:",
+    "ld-label-region": "Rhanbarth:",
+    "ld-val-gender-f": "Benyw",
+    "ld-val-gender-m": "Gwryw",
+    "ld-val-dob-florence": "5 Ebrill 2017",
+    "ld-val-dob-william": "15 Ebrill 2028",
+    "ld-val-dob-sherwin": "17 Mai 2024",
+    "ld-val-dob-aldric": "15 Chwefror 2035",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 }
 
 # LATVIAN (Austrumish / au)
@@ -1018,6 +1074,20 @@ lv = {
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Dzimšanas Datums:",
+    "ld-label-gender": "Dzimums:",
+    "ld-label-region": "Reģions:",
+    "ld-val-gender-f": "Sieviete",
+    "ld-val-gender-m": "Vīrietis",
+    "ld-val-dob-florence": "2017. gada 5. aprīlis",
+    "ld-val-dob-william": "2028. gada 15. aprīlis",
+    "ld-val-dob-sherwin": "2024. gada 17. maijs",
+    "ld-val-dob-aldric": "2035. gada 15. februāris",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 }
 
 # GERMAN (Leislandic / le)
@@ -1242,4 +1312,18 @@ for code, d in lang_dicts.items():
     "ld-bio-aldric": "[Placeholder: Aldric's biography will go here]",
     "ld-exp-aldric": "[Placeholder: Aldric's experience will go here]",
     "ld-focus-aldric": "[Placeholder: Aldric's core focus will go here]"
+,
+    "ld-label-dob": "Geburtsdatum:",
+    "ld-label-gender": "Geschlecht:",
+    "ld-label-region": "Region:",
+    "ld-val-gender-f": "Weiblich",
+    "ld-val-gender-m": "Männlich",
+    "ld-val-dob-florence": "5. April 2017",
+    "ld-val-dob-william": "15. April 2028",
+    "ld-val-dob-sherwin": "17. Mai 2024",
+    "ld-val-dob-aldric": "15. Februar 2035",
+    "ld-val-region-kazana": "Kazana",
+    "ld-val-region-cambria": "Cambria",
+    "ld-val-region-mezata": "Mezata",
+    "ld-val-region-ventura": "Ventura"
 } translated keys")
