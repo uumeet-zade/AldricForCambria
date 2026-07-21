@@ -1,145 +1,177 @@
 <!DOCTYPE html>
 
 <html lang="en" translate="no">
+
 <head>
-<meta charset="utf-8"/>
-<meta name="google" content="notranslate"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Social Democratic Alliance - For the Republic</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/style.css?v=7.1" rel="stylesheet"/>
-<script>
+  <meta charset="utf-8" />
+  <meta name="google" content="notranslate" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Social Democratic Alliance - For the Republic</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/style.css?v=7.1" rel="stylesheet" />
+  <script>
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme !== 'light') {
       document.documentElement.classList.add('dark-theme');
     }
   </script>
-<script defer="" src="assets/js/translations.js?v=2.2"></script>
-<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
-<meta content="Social Democratic Alliance" property="og:title"/>
-<meta content="For the Republic. For the People." property="og:description"/>
-<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" property="og:image"/>
-<meta content="website" property="og:type"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Social Democratic Alliance" name="twitter:title"/>
-<meta content="For the Republic. For the People." name="twitter:description"/>
-<meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" name="twitter:image"/>
+  <script defer="" src="assets/js/translations.js?v=2.2"></script>
+  <link href="assets/images/favicon.png" rel="icon" type="image/png" />
+  <meta content="Social Democratic Alliance" property="og:title" />
+  <meta content="For the Republic. For the People." property="og:description" />
+  <meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" property="og:image" />
+  <meta content="website" property="og:type" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Social Democratic Alliance" name="twitter:title" />
+  <meta content="For the Republic. For the People." name="twitter:description" />
+  <meta content="https://uumeet-zade.github.io/sdapage/assets/images/link_preview.png" name="twitter:image" />
 </head>
+
 <body>
-<nav>
-<a class="nav-brand" href="index.html" style="text-decoration: none; color: inherit;">
-<img alt="Social Democratic Alliance Logo" class="nav-logo logo-light" src="assets/images/SDAlogo.svg"/>
-<img alt="Social Democratic Alliance Logo" class="nav-logo logo-dark" src="assets/images/SDAlogo-dark.svg"/>
-<span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
-</a>
-<button aria-label="Toggle Menu" class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-<ul class="nav-links">
-<li><a data-i18n="nav-home" href="index.html">Home</a></li>
-<li><a class="active" data-i18n="nav-platform" href="platform.html">Platform</a></li>
-<li><a data-i18n="nav-campaigning" href="events.html">Campaigning</a></li>
-<li><a data-i18n="nav-candidates" href="candidates.html">Candidates</a></li>
-<li class="lang-switcher">
-<button aria-label="Change Language" class="lang-toggle">
-<span class="lang-current">AL</span>
-</button>
-<div class="lang-dropdown">
-<button class="lang-option active" data-i18n="auto-platform-1" data-lang="al">Alanian</button>
-<button class="lang-option" data-i18n="auto-platform-2" data-lang="ga">Gallic</button>
-<button class="lang-option" data-i18n="auto-platform-3" data-lang="ac">Alcamerian</button>
-<button class="lang-option" data-i18n="auto-platform-4" data-lang="ra">Rälandic</button>
-<button class="lang-option" data-i18n="auto-platform-5" data-lang="my">Myrati</button>
-<button class="lang-option" data-i18n="auto-platform-6" data-lang="au">Austrumish</button>
-<button class="lang-option" data-i18n="auto-platform-7" data-lang="le">Leislandic</button>
-</div>
-</li>
-<li><a class="theme-toggle" data-i18n="auto-platform-19" href="#" onclick="toggleTheme(event)" title="Toggle Night Mode">🌗</a></li>
-</ul>
-</nav>
-<section class="page-header" style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
-<h1 data-i18n="plat-title" style=" font-size: 4.5rem;">The Republic Platform</h1>
-<p data-i18n="plat-desc" style="margin: 0 auto; font-size: 1.25rem; max-width: 700px;">Our comprehensive blueprint for a stronger Republic. We are committed to economic justice, uncompromising national security, robust democratic institutions, and seamlessly connecting every community through modern infrastructure and localized innovation.</p>
-</section>
-<section class="platform-zigzag" style="position: relative; z-index: 5; padding-top: 40px;">
-<!-- Pillar 1: Economic Justice & Small Business -->
-<div class="zigzag-row reveal-on-scroll">
-<div class="zigzag-image-placeholder">
-<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
-<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-</svg>
-</div>
-<div class="zigzag-content">
-<h2 class="zigzag-title" data-i18n="auto-platform-8">Economic Justice &amp; Local Commerce</h2>
-<p class="zigzag-desc" data-i18n="auto-platform-9">We will bring back taxation for luxury goods and implement a robust wealth tax to ensure the ultra-rich pay their fair share. Simultaneously, we support our foundational smaller businesses by lowering their taxes for each employee they employ, directly incentivizing local job creation and community growth.</p>
-</div>
-</div>
-<!-- Pillar 2: National Security -->
-<div class="zigzag-row reveal-on-scroll">
-<div class="zigzag-image-placeholder">
-<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
-<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-</svg>
-</div>
-<div class="zigzag-content">
-<h2 class="zigzag-title" data-i18n="auto-platform-10">National Security &amp; Intelligence Reform</h2>
-<p class="zigzag-desc" data-i18n="auto-platform-11">The defense of the Republic requires a unified approach. We will repeal the Nuremberg Act, which unjustly punishes the Caprican Office of Intelligence (COIN). To create a streamlined and impenetrable intelligence apparatus, we will merge domestic security (CIVIC) back into COIN.</p>
-</div>
-</div>
-<!-- Pillar 3: Judiciary -->
-<div class="zigzag-row reveal-on-scroll">
-<div class="zigzag-image-placeholder">
-<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
-<path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11M8 14v4m4-4v4m4-4v4"></path>
-</svg>
-</div>
-<div class="zigzag-content">
-<h2 class="zigzag-title" data-i18n="auto-platform-12">Judicial Expansion &amp; Balance</h2>
-<p class="zigzag-desc" data-i18n="auto-platform-13">Our courts must reflect the true scope and needs of our growing Republic. We pledge to nominate Mary Reichel Proctor to the Supreme Court and actively expand the court's seats to ensure a balanced, robust, and profoundly fair judicial system that works for all Capricans.</p>
-</div>
-</div>
-<!-- Pillar 4: Education & R&D -->
-<div class="zigzag-row reveal-on-scroll">
-<div class="zigzag-image-placeholder">
-<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
-<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
-</svg>
-</div>
-<div class="zigzag-content">
-<h2 class="zigzag-title" data-i18n="auto-platform-14">Higher Education &amp; Innovation</h2>
-<p class="zigzag-desc" data-i18n="auto-platform-15">Education and innovation are the twin engines of the Republic. We are committing to massively increased funding for higher education. Furthermore, we will establish a dedicated Research &amp; Development (R&amp;D) Center in every state. These centers will be staffed first by the local community and will prioritize solving the unique industrial and ecological needs of their respective regions.</p>
-</div>
-</div>
-<!-- Pillar 5: Rural Infrastructure -->
-<div class="zigzag-row reveal-on-scroll">
-<div class="zigzag-image-placeholder">
-<svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25" viewbox="0 0 24 24" width="80">
-<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-<line x1="12" x2="12" y1="22.08" y2="12"></line>
-</svg>
-</div>
-<div class="zigzag-content">
-<h2 class="zigzag-title" data-i18n="auto-platform-16">Rural Infrastructure &amp; Logistics</h2>
-<p class="zigzag-desc" data-i18n="auto-platform-17">Our economy relies on seamless connectivity. Under our new <strong>CapriConnect</strong> infrastructure plan, we will aggressively expand the infrastructure of rural nodes for commercial and logistical use. The core aim of CapriConnect is to link every single state across the Republic with a modernized high-speed rail network, ensuring no region is left behind.</p>
-</div>
-</div>
-</section>
-<footer>
-<div class="footer-container">
-<div class="footer-brand">
-<img alt="Social Democratic Alliance" class="logo-light" src="assets/images/SDAlogo.svg"/>
-<img alt="Social Democratic Alliance" class="logo-dark" src="assets/images/SDAlogo-dark.svg"/>
-<div class="footer-brand-text">
-<div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
-<div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
-</div>
-</div>
-<div class="footer-copy" data-i18n="footer-copy">
-        Upcoming Elections · Caprica<br/>
+  <nav>
+    <a class="nav-brand" href="index.html" style="text-decoration: none; color: inherit;">
+      <img alt="Social Democratic Alliance Logo" class="nav-logo logo-light" src="assets/images/SDAlogo.svg" />
+      <img alt="Social Democratic Alliance Logo" class="nav-logo logo-dark" src="assets/images/SDAlogo-dark.svg" />
+      <span class="nav-name" data-i18n="nav-name">Social Democratic Alliance</span>
+    </a>
+    <button aria-label="Toggle Menu" class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <ul class="nav-links">
+      <li><a data-i18n="nav-home" href="index.html">Home</a></li>
+      <li><a class="active" data-i18n="nav-platform" href="platform.html">Platform</a></li>
+      <li><a data-i18n="nav-campaigning" href="events.html">Campaigning</a></li>
+      <li><a data-i18n="nav-candidates" href="candidates.html">Candidates</a></li>
+      <li class="lang-switcher">
+        <button aria-label="Change Language" class="lang-toggle">
+          <span class="lang-current">AL</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-i18n="auto-platform-1" data-lang="al">Alanian</button>
+          <button class="lang-option" data-i18n="auto-platform-2" data-lang="ga">Gallic</button>
+          <button class="lang-option" data-i18n="auto-platform-3" data-lang="ac">Alcamerian</button>
+          <button class="lang-option" data-i18n="auto-platform-4" data-lang="ra">Rälandic</button>
+          <button class="lang-option" data-i18n="auto-platform-5" data-lang="my">Myrati</button>
+          <button class="lang-option" data-i18n="auto-platform-6" data-lang="au">Austrumish</button>
+          <button class="lang-option" data-i18n="auto-platform-7" data-lang="le">Leislandic</button>
+        </div>
+      </li>
+      <li><a class="theme-toggle" data-i18n="auto-platform-19" href="#" onclick="toggleTheme(event)"
+          title="Toggle Night Mode">🌗</a></li>
+    </ul>
+  </nav>
+  <section class="page-header"
+    style="margin-top: 80px; text-align: center; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
+    <h1 data-i18n="plat-title" style=" font-size: 4.5rem;">The Republic Platform</h1>
+    <p data-i18n="plat-desc" style="margin: 0 auto; font-size: 1.25rem; max-width: 700px;">Our comprehensive blueprint
+      for a stronger Republic. We are committed to economic justice, uncompromising national security, robust democratic
+      institutions, and seamlessly connecting every community through modern infrastructure and localized innovation.
+    </p>
+  </section>
+  <section class="platform-zigzag" style="position: relative; z-index: 5; padding-top: 40px;">
+    <!-- Pillar 1: Economic Justice & Small Business -->
+    <div class="zigzag-row reveal-on-scroll">
+      <div class="zigzag-image-placeholder">
+        <svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter"
+          stroke-width="1.25" viewbox="0 0 24 24" width="80">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+        </svg>
+      </div>
+      <div class="zigzag-content">
+        <h2 class="zigzag-title" data-i18n="auto-platform-8">Economic Justice &amp; Local Commerce</h2>
+        <p class="zigzag-desc" data-i18n="auto-platform-9">We will bring back taxation for luxury goods and implement a
+          robust wealth tax to ensure the ultra-rich pay their fair share. Simultaneously, we support our foundational
+          smaller businesses by lowering their taxes for each employee they employ, directly incentivizing local job
+          creation and community growth.</p>
+      </div>
+    </div>
+    <!-- Pillar 2: National Security -->
+    <div class="zigzag-row reveal-on-scroll">
+      <div class="zigzag-image-placeholder">
+        <svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter"
+          stroke-width="1.25" viewbox="0 0 24 24" width="80">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+      </div>
+      <div class="zigzag-content">
+        <h2 class="zigzag-title" data-i18n="auto-platform-10">National Security &amp; Intelligence Reform</h2>
+        <p class="zigzag-desc" data-i18n="auto-platform-11">The defense of the Republic requires a unified approach. We
+          will repeal the Nuremberg Act, which unjustly punishes the Caprican Office of Intelligence (COIN). To create a
+          streamlined and impenetrable intelligence apparatus, we will merge domestic security (CIVIC) back into COIN.
+        </p>
+      </div>
+    </div>
+    <!-- Pillar 3: Judiciary -->
+    <div class="zigzag-row reveal-on-scroll">
+      <div class="zigzag-image-placeholder">
+        <svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter"
+          stroke-width="1.25" viewbox="0 0 24 24" width="80">
+          <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11M8 14v4m4-4v4m4-4v4"></path>
+        </svg>
+      </div>
+      <div class="zigzag-content">
+        <h2 class="zigzag-title" data-i18n="auto-platform-12">Judicial Expansion &amp; Balance</h2>
+        <p class="zigzag-desc" data-i18n="auto-platform-13">Our courts must reflect the true scope and needs of our
+          growing Republic. We pledge to nominate Mary Reichel Proctor to the Supreme Court and actively expand the
+          court's seats to ensure a balanced, robust, and profoundly fair judicial system that works for all Capricans.
+        </p>
+      </div>
+    </div>
+    <!-- Pillar 4: Education & R&D -->
+    <div class="zigzag-row reveal-on-scroll">
+      <div class="zigzag-image-placeholder">
+        <svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter"
+          stroke-width="1.25" viewbox="0 0 24 24" width="80">
+          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+        </svg>
+      </div>
+      <div class="zigzag-content">
+        <h2 class="zigzag-title" data-i18n="auto-platform-14">Higher Education &amp; Innovation</h2>
+        <p class="zigzag-desc" data-i18n="auto-platform-15">Education and innovation are the twin engines of the
+          Republic. We are committing to massively increased funding for higher education. Furthermore, we will
+          establish a dedicated Research &amp; Development (R&amp;D) Center in every state. These centers will be
+          staffed first by the local community and will prioritize solving the unique industrial and ecological needs of
+          their respective regions.</p>
+      </div>
+    </div>
+    <!-- Pillar 5: Rural Infrastructure -->
+    <div class="zigzag-row reveal-on-scroll">
+      <div class="zigzag-image-placeholder">
+        <svg fill="none" height="80" stroke="var(--primary)" stroke-linecap="square" stroke-linejoin="miter"
+          stroke-width="1.25" viewbox="0 0 24 24" width="80">
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+          </path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" x2="12" y1="22.08" y2="12"></line>
+        </svg>
+      </div>
+      <div class="zigzag-content">
+        <h2 class="zigzag-title" data-i18n="auto-platform-16">Rural Infrastructure &amp; Logistics</h2>
+        <p class="zigzag-desc" data-i18n="auto-platform-17">Our economy relies on seamless connectivity. Under our new
+          <strong>CapriConnect</strong> infrastructure plan, we will aggressively expand the infrastructure of rural
+          nodes for commercial and logistical use. The core aim of CapriConnect is to link every single state across the
+          Republic with a modernized high-speed rail network, ensuring no region is left behind.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img alt="Social Democratic Alliance" class="logo-light" src="assets/images/SDAlogo.svg" />
+        <img alt="Social Democratic Alliance" class="logo-dark" src="assets/images/SDAlogo-dark.svg" />
+        <div class="footer-brand-text">
+          <div class="footer-name" data-i18n="footer-name">Social Democratic Alliance</div>
+          <div class="footer-motto" data-i18n="footer-motto">For the Republic. For the People.</div>
+        </div>
+      </div>
+      <div class="footer-copy" data-i18n="footer-copy">
+        Upcoming Elections · Caprica<br />
         Social Democratic Alliance
       </div>
-</div>
-</footer>
-<script>
+    </div>
+  </footer>
+  <script>
     function openModal(id) {
       document.getElementById(id).classList.add('active');
     }
@@ -147,7 +179,7 @@
       if (event && event.target.id !== id) return;
       document.getElementById(id).classList.remove('active');
     }
-    
+
     function toggleTheme(e) {
       if (e) e.preventDefault();
       const html = document.documentElement;
@@ -175,11 +207,12 @@
           }
         });
       }, { threshold: 0.1 });
-      
+
       document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
         observer.observe(el);
       });
     });
   </script>
 </body>
+
 </html>
