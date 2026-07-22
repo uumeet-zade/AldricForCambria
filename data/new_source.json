@@ -217,10 +217,10 @@
   "auto-candidates-13": "Vice Presidential Candidate",
   "auto-candidates-14": "National",
   "auto-candidates-15": "The incumbent Vice President and official running-mate representing Caprica Unity, Isolde has been an unwavering partner to President Trottier and a relentless advocate for the working masses.",
-  "auto-candidates-16": "Safiyya Bethune",
-  "role-gov": "Governor Candidate",
-  "const-gov": "State/Regional",
-  "bio-gov": "Candidate for Governor.",
+  "auto-candidates-16": "Safiyya Bethune <img alt=\"Independent Logo\" src=\"assets/images/independent.png\" style=\"height: 32px; width: auto;\" title=\"Independent\"/>",
+  "role-gov-safiyya": "Governor Candidate",
+  "const-gov-safiyya": "Reno",
+  "bio-gov-safiyya": "Independent Candidate for the Governorship of Reno. She is SDA's choice of candidate.",
   "cand-cat-const": "Constituency Parliament",
   "auto-candidates-17": "Marcus Horvat",
   "auto-candidates-18": "Parliament Candidate",
@@ -290,5 +290,8 @@
   "cand-meet-title": "Meet them on the ground",
   "cand-meet-desc": "Join our candidates at town halls, rallies, and community meetings near you.",
   "cand-meet-btn": "View Upcoming Events",
-  "auto-candidates-82": "View Events"
+  "auto-candidates-82": "View Events",
+  "modal-refer-publishing": "Refer to their respective publishings for campaigning and media events.",
+  "modal-view-events": "View Events",
+  "modal-view-media": "View Media"
 }

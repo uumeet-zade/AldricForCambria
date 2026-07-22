@@ -3,7 +3,7 @@
 <html lang="en" translate="no">
 <head>
 <meta charset="utf-8"/>
-<meta name="google" content="notranslate"/>
+<meta content="notranslate" name="google"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Social Democratic Alliance - For the Republic</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -227,12 +227,20 @@
       const ldCards = document.querySelectorAll('.leadership-section .featured-candidate-card');
       ldCards.forEach(card => {
         card.addEventListener('click', () => {
-          const name = card.querySelector('.candidate-name').innerHTML;
-          const role = card.querySelector('.candidate-role').innerHTML;
+          const nameElCard = card.querySelector('.candidate-name');
+          const roleElCard = card.querySelector('.candidate-role');
           const hiddenDetails = card.querySelector('.hidden-details').innerHTML;
           
-          ldNameEl.innerHTML = name;
-          ldRoleEl.innerHTML = role;
+          ldNameEl.innerHTML = nameElCard.innerHTML;
+          ldRoleEl.innerHTML = roleElCard.innerHTML;
+
+          const nameI18n = nameElCard.getAttribute('data-i18n');
+          if (nameI18n) ldNameEl.setAttribute('data-i18n', nameI18n);
+          else ldNameEl.removeAttribute('data-i18n');
+
+          const roleI18n = roleElCard.getAttribute('data-i18n');
+          if (roleI18n) ldRoleEl.setAttribute('data-i18n', roleI18n);
+          else ldRoleEl.removeAttribute('data-i18n');
           
           // Re-create the structure beautifully inside the modal
           ldBodyEl.innerHTML = `
